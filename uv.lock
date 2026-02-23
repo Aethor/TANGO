@@ -1,0 +1,47 @@
+version = 1
+revision = 3
+requires-python = ">=3.8"
+
+[[package]]
+name = "tango"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "torch" },
+    { name = "torch-scatter" },
+    { name = "torchdiffeq" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "torch", specifier = "==1.4.0" },
+    { name = "torch-scatter", specifier = "==2.0.5" },
+    { name = "torchdiffeq", specifier = "==0.1.0" },
+]
+
+[[package]]
+name = "torch"
+version = "1.4.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bc/47/5b7c4f832b600779eed76cac86efbd5054f124bc919930aced51de2ccbb1/torch-1.4.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:504915c6bc6051ba6a4c2a43c446463dff04411e352f1e26fe13debeae431778", size = 753427061, upload-time = "2020-01-15T23:29:57.574Z" },
+    { url = "https://files.pythonhosted.org/packages/53/e1/f2ba65890bb3ed98eda66ec9195e97b9b1b5824117ff4c8ad3b3f298e464/torch-1.4.0-cp38-none-macosx_10_9_x86_64.whl", hash = "sha256:d7b34a78f021935ad727a3bede56a8a8d4fda0b0272314a04c5f6890bbe7bb29", size = 81161751, upload-time = "2020-01-28T23:17:17.742Z" },
+]
+
+[[package]]
+name = "torch-scatter"
+version = "2.0.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/01/45/cd93ed3227248773ba8bc4b3beaa04e8bddb127a793a41bad875369951b3/torch_scatter-2.0.5.tar.gz", hash = "sha256:148fbe634fb9e9465dbde2ab337138f63650ed8abbac42bb3f565e3fe92e9b2f", size = 20927, upload-time = "2020-06-24T09:26:58.062Z" }
+
+[[package]]
+name = "torchdiffeq"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "torch" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/de/67/e303d450dd00ba694e803490c248e9ad7f15a3c010833af574f87de05ada/torchdiffeq-0.1.0.tar.gz", hash = "sha256:215091b275423f768f7cda568854ad39a0665d395f658f462e29f3452c1e62dd", size = 25229, upload-time = "2020-08-10T15:05:11.165Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b9/2b/797399e074bf245897f1e46e33e49140509e3f31562acb04414813e3ef42/torchdiffeq-0.1.0-py3-none-any.whl", hash = "sha256:51ef761bf3c0de35bca22d45bcb877b002e5cb2cc2987ee6e73eba1f0206e74c", size = 29479, upload-time = "2020-08-10T15:05:10.062Z" },
+]
